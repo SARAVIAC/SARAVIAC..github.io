@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - Juan Pablo Castellana</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital@1&family=Lora:ital,wght@0,400;0,500;1,400&family=Oswald:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+    <div class = "centrado">
+        <header>
+            <nav>
+                    <ul>
+                        <li><a href="#datos-1">Datos Personales</a></li>
+                        <li><a href="#datos-2">Presentación</a></li>
+                        <li><a href="#datos-3">Formación Académica</a></li>
+                        <li><a href="#datos-4">Experiencia Laboral</a></li>
+                    </ul>
+
+            </nav>
+        </header>
+        <main>
+            <section class="cabecera">
+                <p class = "linea"></p>
+                <img class ="imagenCV" src="https://randomuser.me/api/portraits/men/1.jpg">
+                <br>
+                <i class="fa-light fa-user"></i>
+                <h1 >Juan Pablo Castellana</h1>
+                <h3>Experto en Ventas</h3>
+                <br>
+                <p class = "linea"></p>
+            </section>
+            <section id="Secciones">
+                <div id ="datos-1">
+                    <h2> Datos Personales:</h2>
+                    <button type="button" id="botonMDP" onclick="mostrar('DatPers','botonMDP','botonODP')";>Mostrar Datos</button>
+                    <button type="button" id="botonODP"onclick="ocultar('DatPers','botonMDP','botonODP')";>Ocultar Datos</button>
+                    <ul id="DatPers">
+                        <li >Nacionalidad: Español</li>
+                        <li>Domicilio: Patraña 9854 - Malaga CP: 879BH</li>
+                        <li>Fecha Nac.: 01/07/1996</li>
+                        <li>Tel.: +34 951 952 851</li>
+                        <li>e-mail: CastellanaJP@gmail.com</li>
+                    </ul>
+                </div>
+            </section>
+            <section id="Secciones">
+                <div id ="datos-2">
+                    <h2>Presentación:</h2>
+                    <button type="button" id="botonMPres" onclick="mostrar('presentación','botonMPres','botonOPres')";>Mostrar Datos</button>
+                    <button type="button" id="botonOPres"onclick="ocultar('presentación','botonMPres','botonOPres')";>Ocultar Datos</button>
+                    <ul id="presentación">
+                        <li>Mi anhelo es ser parte de un equipo donde pueda poner en práctica los conocimientos 
+                            adquiridos durante mis años de formación y experiencia, desarrollarme, crecer en 
+                            lo profesional y personal en función a mis logros y aportaciones laborales.</li>
+                    </ul>
+                </div>
+            </section>
+            <section id="Secciones">
+                <div id ="datos-3">
+                    <h2>Formación Académica: </h2>
+                    <button type="button" id="b-MFA" onclick="mostrar('FormAcad','b-MFA','b-OFA')";>Mostrar Datos</button>
+                    <button type="button" id="b-OFA"onclick="ocultar('FormAcad','b-MFA','b-OFA')";>Ocultar Datos</button>
+                    <ul id="FormAcad">
+                        <li>Grado Superior en Administración y Finanzas
+                            MEDAC, Málaga
+                            Septiembre de 2015 - Junio de 2018
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section id="Secciones">
+                <div id ="datos-4">
+                    <h2>Experiencia Laboral: </h2>
+                    <button type="button" id="b-MEL" onclick="mostrar('ExpLab','b-MEL','b-OEL')";>Mostrar Datos</button>
+                    <button type="button" id="b-OEL"onclick="ocultar('ExpLab','b-MEL','b-OEL')";>Ocultar Datos</button>
+                    <ul id ="ExpLab">
+                        <li>Jefe de Ventas
+                            Grupo NARA Farmacéuticas
+                            Abril 2020 - actualidad
+                            Superé las metas de venta anuales del departamento en un 5%.
+                            Coordiné un equipo de 5 vendedores y realicé monitoreo de sus metas individuales.
+                            Generé dinámicas de grupo y planes colaborativos que aumentaron la satisfacción de los empleados en un 20%.
+                            Aumenté la cartera de clientes de la empresa en un 15%.                                                            
+                        </li>
+                        <br>
+                        <li>Representante de ventas
+                            Laboratorios Novoke
+                            Enero 2018 - diciembre 2020
+                            Superé constantemente mis metas anuales en un 10%.
+                            Obtuve el premio al Mejor Vendedor de la empresa en 3 ocasiones.
+                            Brindé entrenamiento y asesoría a 5 nuevos representantes.
+                            Obtuve un índice de satisfacción del cliente de 9,6.
+
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+        </main>
+
+    </div>
+    <script src="js/js.js"></script>
+</body>
+</html>
